@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>フォームAPIサンプル</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="wrapper">
+    <h1>住所を入力してください</h1>
+    <form>
+        <table>
+            <tbody>
+                <tr>
+                    <th>郵便番号</th>
+                    <td>
+                        <input id="input" class="zipcode" type="text" name="zipcode" value="" placeholder="例)8120012">
+                        <button id="search" type="button">住所検索</button>
+                        <p id="error"></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>都道府県</th>
+                    <td><input id="address1" type="text" name="address1" value=""></td>
+                </tr>
+
+                <tr>
+                    <th>市区町村</th>
+                    <td><input id="address2" type="text" name="address2" value=""></td>
+                </tr>
+
+                <tr>
+                    <th>町域</th>
+                    <td><input id="address3" type="text" name="address3" value=""></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
+
+<body>
+    <script src="main.js"></script>
+</body>
+
+</html>
