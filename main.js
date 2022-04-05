@@ -16,7 +16,7 @@ search.addEventListener("click", () => {
 
   //APIからデータを取得
   async function fetchData() {
-    // console.log(postcode);
+    
     const response = await fetch(
       `https://zipcloud.ibsnet.co.jp/api/search?zipcode=${postcode}`
     );
